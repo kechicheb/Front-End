@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  position: relative;
+  margin: 120px auto 0;
+  background-color: rgb(153, 153, 153);
+  outline: none;
+  display: block;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+button > span {
+  position: absolute;
+  top: -60px;
+  left: -50px;
+  padding: 10px;
+  opacity: 0;
+  width: calc(100% + 100px) !important;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+button:hover {
+  overflow: visible;
+}
+button:hover > span {
+  opacity: 1;
+}
+button > span::after {
+  position: absolute;
+  content: "";
+  border: 10px solid;
+  border-color: rgb(54, 54, 54) transparent transparent transparent;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+button[data-position="bottom"] > span {
+  bottom: -60px;
+  top: unset;
+}
+button[data-position="bottom"] > span::after {
+  border-color: transparent transparent rgb(54, 54, 54);
+  top: unset;
+  bottom: 100%;
+}

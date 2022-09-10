@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+  max-width: 400px;
+  text-align: center;
+  overflow: hidden;
+  line-height: 1.5;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  padding: 20px 20px 20px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card .number {
+  background-color: red;
+  color: white;
+  margin: 0 auto 20px;
+  padding: 10px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card:hover .number {
+  box-shadow: 0px 0px 0px 500px red;
+}
+.card:hover .title,
+.card:hover p {
+  color: #fff;
+}
+.card .title {
+  margin-bottom: 10px;
+}

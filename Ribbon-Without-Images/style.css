@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+  max-width: 400px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: rgb(216, 216, 216);
+  padding: 20px;
+  margin: 50px auto 0;
+}
+.card h2 {
+  position: relative;
+  background-color: #009688;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 0 20px 0;
+  width: calc(100% + 80px);
+  left: -40px;
+}
+.card h2::before,
+.card h2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  border: 10px solid;
+}
+.card h2::before {
+  border-color: #01695f #01695f transparent transparent;
+  left: 0;
+}
+.card h2::after {
+  right: 0;
+  border-color: #01695f transparent transparent #01695f;
+}

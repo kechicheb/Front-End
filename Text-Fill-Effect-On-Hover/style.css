@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fill {
+  position: relative;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px #000;
+  -webkit-text-fill-color: #fff;
+}
+.fill::before {
+  content: attr(data-text);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-text-fill-color: #ff5722;
+  width: 0;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
+}
+.fill:hover::before {
+  width: 100%;
+}
