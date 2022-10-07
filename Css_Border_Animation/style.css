@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap");
+:root {
+  --borderColor:#2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  position: absolute;
+  top:10%;
+  color: #2196f3;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+div {
+  position: relative;
+  border: 2px solid var(--borderColor);
+  width: 250px;
+  height: 120px;
+}
+div::before,
+div::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+div::before {
+  top: -6px;
+  left: -6px;
+  border-top: 2px solid var(--borderColor);
+  border-left: 2px solid var(--borderColor);
+}
+
+div::after {
+  right: -6px;
+  bottom: -6px;
+  border-bottom: 2px solid var(--borderColor);
+  border-right: 2px solid var(--borderColor);
+}
+div:hover::after ,
+div:hover::before {
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+}
