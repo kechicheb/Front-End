@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+.card {
+  height: 330px;
+  width: 300px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.85s;
+  -webkit-transition: all 0.85s;
+  -moz-transition: all 0.85s;
+  -ms-transition: all 0.85s;
+  -o-transition: all 0.85s;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+h2 {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -100%;
+  opacity: 0;
+  font-size: 1.2rem;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.profile {
+  background: url("./img.jpg") center center no-repeat;
+
+  background-size: 500px;
+}
+.profile:hover {
+  background: url("./img.jpg") right center no-repeat;
+  background-size: 600px;
+}
+.profile:hover h2 {
+  opacity: 1;
+  bottom: 0;
+}
