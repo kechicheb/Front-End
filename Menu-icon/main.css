@@ -61,3 +61,18 @@ body {
 }
 /* End hamburger */
 
+/* Start kebab */
+.kebab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.kebab span {
+  background-color: var(--main-color);
+  width: 8px;
+  height: 8px;
+  clip-path: circle(40%);
+}
+/* End kebab */
