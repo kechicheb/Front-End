@@ -90,3 +90,16 @@ body {
   clip-path: circle(40%);
 }
 /* End Candy Box */
+
+/* Start chocolate */
+.chocolate {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+}
+.chocolate span {
+  width: 6px;
+  height: 6px;
+  background-color: var(--main-color);
+}
+/* End chocolate */
