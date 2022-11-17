@@ -28,7 +28,7 @@ body {
 }
 .card {
   display: flex;
-  flex-basis: calc(100% / 4 - 60px);
+  width:250px;
   gap: 20px;
   background-color: #fff;
   padding: 20px;
