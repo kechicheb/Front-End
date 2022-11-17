@@ -196,3 +196,29 @@ body {
 }
 
 /* End Stairs */
+
+/* Start Cake */
+
+.cake {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.cake span {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.cake span:first-child {
+  background-color: var(--main-color);
+  width: 8px;
+  height: 8px;
+  clip-path: circle(40%);
+}
+/* End Cake */
