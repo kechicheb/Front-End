@@ -76,3 +76,17 @@ body {
   clip-path: circle(40%);
 }
 /* End kebab */
+
+/* Start Candy Box */
+.candybox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+}
+.candybox span {
+  background-color: var(--main-color);
+  width: 8px;
+  height: 8px;
+  clip-path: circle(40%);
+}
+/* End Candy Box */
