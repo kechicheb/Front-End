@@ -300,3 +300,33 @@ body {
   border-bottom-left-radius: 50px;
 }
 /* End Oreos */
+/* Start Cheeseburger */
+
+.cheeseburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.cheeseburger span {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.cheeseburger span:nth-child(2) {
+  position: relative;
+}
+.cheeseburger span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  border: 5px solid;
+  border-color: var(--main-color) transparent transparent transparent;
+}
+/* End Cheeseburger */
