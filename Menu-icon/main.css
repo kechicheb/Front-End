@@ -122,3 +122,28 @@ body {
   -o-border-radius: 6px;
 }
 /* End Vegie Burger */
+
+/* Start  Strawberry */
+.strawberry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.strawberry span {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.strawberry span:nth-child(2) {
+  width: 85%;
+}
+.strawberry span:last-child {
+  width: 60%;
+}
+/* End Strawberry */
