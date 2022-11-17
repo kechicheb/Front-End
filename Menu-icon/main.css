@@ -103,3 +103,22 @@ body {
   background-color: var(--main-color);
 }
 /* End chocolate */
+
+/* Start Vegie Burger */
+.vegieburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.vegieburger span {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* End Vegie Burger */
