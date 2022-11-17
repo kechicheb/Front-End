@@ -263,3 +263,40 @@ body {
 }
 
 /* End Hot Dog */
+
+/* Start Oreos */
+.oreos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.oreos span {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.oreos :is(span:first-child, span:nth-child(3)) {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.oreos :is(span:last-child, span:nth-child(2)) {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+/* End Oreos */
