@@ -147,3 +147,27 @@ body {
   width: 60%;
 }
 /* End Strawberry */
+
+/* Start Fries */
+.fries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.fries span {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.fries span:nth-child(2) {
+  width: 70%;
+  align-self: flex-end;
+}
+
+/* End Fries */
