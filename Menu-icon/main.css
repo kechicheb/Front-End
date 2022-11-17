@@ -171,3 +171,28 @@ body {
 }
 
 /* End Fries */
+
+/* Start Stairs */
+.stairs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.stairs span {
+  width: 50%;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.stairs span:first-child {
+  align-self: flex-end;
+}
+.stairs span:nth-child(2) {
+  align-self: center;
+}
+
+/* End Stairs */
