@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f4f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.html {
+  --bg-color: #e44f26;
+  --bg-color-light: #ffd4c8;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+
+.css {
+  --bg-color: #1673b6;
+  --bg-color-light: #cdeaff;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(188, 221, 255, 0.48);
+}
+
+.js {
+  --bg-color: #f8de1a;
+  --bg-color-light: #fff8c7;
+  --text-color-hover: #4c5656;
+  --box-shadow-color: rgba(252, 255, 189, 0.762);
+}
+
+.git {
+  --bg-color: #df4d36;
+  --bg-color-light: #ffe4e0;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(255, 202, 152, 0.48);
+}
+
