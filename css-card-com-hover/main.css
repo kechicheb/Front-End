@@ -63,4 +63,35 @@ body {
     -o-transition: all 0.3s ease-out;
   }
   
- 
+  .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+      0 24px 46px var(--box-shadow-color);
+    -webkit-transform: translateY(-5px) scale(1.005) translateZ(0);
+    -moz-transform: translateY(-5px) scale(1.005) translateZ(0);
+    -ms-transform: translateY(-5px) scale(1.005) translateZ(0);
+    -o-transform: translateY(-5px) scale(1.005) translateZ(0);
+  }
+  
+  .card:hover .color_coverage {
+    transform: scale(4) translateZ(0);
+    -webkit-transform: scale(4) translateZ(0);
+    -moz-transform: scale(4) translateZ(0);
+    -ms-transform: scale(4) translateZ(0);
+    -o-transform: scale(4) translateZ(0);
+  }
+  
+  .card:hover .circle {
+    background: var(--bg-color);
+    border: 2px dotted var(--bg-color-light);
+  }
+  
+  .card:hover .circle:after {
+    background: var(--bg-color-light);
+  }
+  
+  .card:hover p {
+    color: var(--text-color-hover);
+  }
+  
+  
