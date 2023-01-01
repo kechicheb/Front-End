@@ -149,4 +149,15 @@ body {
     transform: translateZ(0);
   }
   
+  .color_coverage {
+    width: 118px;
+    position: absolute;
+    height: 118px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 70px;
+    left: 50px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
   
