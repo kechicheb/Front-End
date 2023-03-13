@@ -33,6 +33,9 @@ body {
   margin: 20px 0;
   justify-content: space-between;
 }
+.row :where(.column, button) {
+  width: calc(100% / 2- 12px);
+}
 .options p {
   font-size: 1.12rem;
   margin-bottom: 8px;
@@ -52,4 +55,46 @@ body {
   outline: none;
   background: none;
   font-size: 1.12rem;
+}
+.options .colors {
+  margin-left: 60px;
+}
+.colors input {
+  height: 41px;
+  width: calc(100% / 2- 20px);
+}
+.colors input:last-child {
+  margin-left: 6px;
+}
+.wrapper textarea {
+  width: 100%;
+  padding: 10px 15px;
+  color: #333;
+  resize: none;
+  font-size: 1.05rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.buttons button {
+  padding: 15px 0;
+  font-size: 1.09rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0 0 -15px;
+}
+.buttons .refresh {
+  background-color: #6c757d;
+}
+.buttons .copy {
+  background: #8a6cff;
 }
