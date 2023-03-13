@@ -57,7 +57,7 @@ body {
   font-size: 1.12rem;
 }
 .options .colors {
-  margin-left: 60px;
+  margin-left: 6px;
 }
 .colors input {
   height: 41px;
@@ -80,8 +80,9 @@ body {
   -o-border-radius: 5px;
 }
 .buttons button {
-  padding: 15px 0;
+  padding: 15px 0px;
   font-size: 1.09rem;
+  color: #fff;
   outline: none;
   cursor: pointer;
   border: none;
