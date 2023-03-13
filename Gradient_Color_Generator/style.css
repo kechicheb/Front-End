@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 body {
@@ -34,7 +34,7 @@ body {
   justify-content: space-between;
 }
 .row :where(.column, button) {
-  width: calc(100% / 2- 12px);
+  width: calc(100% / 2 - 12px);
 }
 .options p {
   font-size: 1.12rem;
@@ -57,11 +57,11 @@ body {
   font-size: 1.12rem;
 }
 .options .colors {
-  margin-left: 6px;
+  margin-left: 60px;
 }
 .colors input {
   height: 41px;
-  width: calc(100% / 2- 20px);
+  width: calc(100% / 2 - 20px);
 }
 .colors input:last-child {
   margin-left: 6px;
