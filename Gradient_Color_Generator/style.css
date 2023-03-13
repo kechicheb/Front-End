@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #8a6cff;
+}
+.wrapper {
+  width: 450px;
+  padding: 25px;
+  border-radius: 7px;
+  background: #fff;
+}
+.wrapper .gradient-box {
+  width: 100%;
+  height: 220px;
+  border-radius: 7px;
+  background: linear-gradient(to left top, #5665e9, #a271f8);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.wrapper .row {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.options p {
+  font-size: 1.12rem;
+  margin-bottom: 8px;
+}
+.options .select-box {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.select-box select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.12rem;
+}
